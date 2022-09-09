@@ -15,6 +15,7 @@ int main(void)
 		if (z == 9)
 		{
 			putchar('\n');
+			break;
 		}
 		z = z + 1;
 		putchar(',');
