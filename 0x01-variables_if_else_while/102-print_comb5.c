@@ -7,26 +7,26 @@
  */
 int main(void)
 {
-	int w = 0;
-	int x = 0;
-	int y = 0;
-	int z = 1;
+	int w;
+	int x;
+	int y;
+	int z;
 
-	for (w = 0; w < 10; w++)
+	for (w = 48; w <= 57; w++)
 	{
-		for (x = 0; x < 10; x++)
+		for (x = 48; x <= 57; x++)
 		{
-			for (y = 0; y < 10; y++)
+			for (y = 48; y <= 57; y++)
 			{
-				for (z = 1; z < 10; z++)
+				for (z = 48; z <= 57; z++)
 				{
 					if (((y + z) > (w + x) && y >= w) || w < y)
 					{
-						putchar((w) + '0');
-						putchar((x) + '0');
+						putchar(w);
+						putchar(x);
 						putchar(' ');
-						putchar((y) + '0');
-						putchar((z) + '0');
+						putchar(y);
+						putchar(z);
 
 					if (w + x + y + z == 227 && w == 57)
 					{
