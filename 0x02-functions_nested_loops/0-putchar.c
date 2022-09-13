@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Return : Always (0) Success
- * _putchar: prints out to standard output
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
