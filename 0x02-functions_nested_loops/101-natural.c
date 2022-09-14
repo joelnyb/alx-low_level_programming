@@ -27,5 +27,5 @@ int main(void)
 		mult2 = 0;
 	}
 	printf("%d\n", value);
-	return 0;
+	return (0);
 }
