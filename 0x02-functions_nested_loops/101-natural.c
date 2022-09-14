@@ -6,13 +6,13 @@
  *@n: calculates
  * Return: Always 0 (Success)
  */
-int mult(int n)
+int mult()
 {
 	int value = 0;
 	int sum ;
 	int mult2;
 	int i = 0;
-	n = 1024;
+	int n = 1024;
 
 	for (i = 1; i < n; i++)
 	{

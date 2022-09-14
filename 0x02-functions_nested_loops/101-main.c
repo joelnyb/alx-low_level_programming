@@ -9,6 +9,6 @@
 int main(void)
 {
 	
-	 mult(1024);
+	 mult();
 	return (0);
 }
