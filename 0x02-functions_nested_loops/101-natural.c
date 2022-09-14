@@ -3,15 +3,15 @@
 
 /**
  * mult - Entry point
- *
+ *@void: calculates
  * Return: Always 0 (Success)
  */
-int mult(void)
+void mult(void)
 {
 	int value = 0;
-	int sum, mult2;
+	int sum, mult2, i;
 
-	for (int i = 1; i < 1024; i++)
+	for (i = 1; i < 1024; i++)
 	{
 		if (i % 5 == 0 || i % 3 == 0)
 		{
@@ -19,9 +19,14 @@ int mult(void)
 
 		}
 		else
+		{
 			continue;
+		}
 		sum = mult2 + value;
+		value = sum;
+		
 	}
 	printf("%d", value);
+	printf("\n");
 }
 
