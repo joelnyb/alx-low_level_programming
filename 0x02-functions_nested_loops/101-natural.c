@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * natural - Entry point
+ * mult - Entry point
  *
  * Return: Always 0 (Success)
  */
