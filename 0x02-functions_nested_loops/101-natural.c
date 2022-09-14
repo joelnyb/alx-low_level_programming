@@ -3,7 +3,6 @@
 
 /**
  * mult - Entry point
- *@n: calculates
  * Return: Always 0 (Success)
  */
 int mult()
