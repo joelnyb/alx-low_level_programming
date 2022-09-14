@@ -1,8 +1,11 @@
 #include "main.h"
 /**
  * print_times_table - Prints N amount of table
- * @n: accepts integer number
+ *
+ * void: accepts integer number
+ * Return: Always 0
  */
+void joel(void);
 void print_times_table(int n)
 {
 	int i, j, value;
@@ -16,9 +19,7 @@ void print_times_table(int n)
 				value = i * j;
 				if (value > 9 && value < 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					joel();
 					_putchar((value / 10) + '0');
 					_putchar((value % 10) + '0');
 				}
@@ -47,4 +48,16 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+}
+/**
+ * joel - prints out charcter
+ *
+ * Return: Always 0
+ */
+void joel(void)
+{
+	_putchar(',');
+	 _putchar(' ');
+	 _putchar(' ');
+
 }
