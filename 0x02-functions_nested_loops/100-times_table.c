@@ -14,7 +14,7 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				value = i * j;
-				if (value > 9 && value <= 100)
+				if (value > 9 && value < 100)
 				{
 					_putchar(',');
 					_putchar(' ');
