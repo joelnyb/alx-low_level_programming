@@ -12,7 +12,7 @@ int main(void)
 	long int i;
 	long int next_term;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i <= 47; i++)
 	{
 		if (i == 0)
 		{
@@ -22,9 +22,10 @@ int main(void)
 		next_term = sum + last_term;
 		last_term = sum;
 		sum = next_term;
-		if (i == 49)
+		if (i == 47)
 		{
 			printf("%ld", sum);
+			break;
 		}
 		printf("%ld, ", sum);
 	}
