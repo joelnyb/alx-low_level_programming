@@ -1,4 +1,4 @@
-
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,7 +6,7 @@
  *@void: calculates
  * Return: Always 0 (Success)
  */
-void mult(void)
+int mult()
 {
 	int value = 0;
 	int sum, mult2, i;
@@ -28,5 +28,6 @@ void mult(void)
 	}
 	printf("%d", value);
 	printf("\n");
+	return value;
 }
 
