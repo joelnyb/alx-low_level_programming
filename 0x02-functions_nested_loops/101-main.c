@@ -8,6 +8,7 @@
  */
 int main(void)
 {
-	mult();
+	
+	 mult(1024);
 	return (0);
 }
