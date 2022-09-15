@@ -26,6 +26,14 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
+			if (i == 100)
+			{
+				_putchar('B');
+				_putchar('u');
+				_putchar('z');
+				_putchar('z');
+			}
+			else
 			Buzz();
 			continue;
 		}
