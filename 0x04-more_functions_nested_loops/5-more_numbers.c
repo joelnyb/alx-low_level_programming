@@ -21,7 +21,7 @@ void more_numbers(void)
 			}
 			else
 			{
-			_putchar(i + '0');
+			_putchar(j + '0');
 			}
 
 		}
