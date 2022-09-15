@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -16,87 +17,32 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			FizzBuzz();
+			printf("FizzBuzz ");
 			continue;
 		}
 		else if (i % 3 == 0)
 		{
-			Fizz();
+			printf("Fizz ");
 			continue;
 		}
 		else if (i % 5 == 0)
 		{
-			if (i == 100)
+			if (i != 100)
 			{
-				_putchar('B');
-				_putchar('u');
-				_putchar('z');
-				_putchar('z');
+				printf("Buzz ");
 			}
 			else
-			Buzz();
+			{
+			printf("Buzz");
+			}
 			continue;
 		}
 		else
 		{
-			if (i < 10)
-			{
-				_putchar(i + '0');
-				_putchar(' ');
-			}
-			else if (i >= 10)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-				_putchar(' ');
-			}
+			printf("%d ", i);
 		}
 
 	}
-	_putchar('\n');
+	printf("\n");
 	return (0);
 }
-/**
- * Fizz - multiple of 3
- * @void: Takes no parameter
- * Return: Always 0
- */
-void Fizz(void)
-{
-	_putchar('F');
-	_putchar('i');
-	_putchar('z');
-	_putchar('z');
-	_putchar(' ');
-}
-/**
- * Buzz - multiple of 5
- * @void: Takes no parameter
- * Retrun: Always 0
- */
-void Buzz(void)
-{
-	_putchar('B');
-	_putchar('u');
-	_putchar('z');
-	_putchar('z');
-	_putchar(' ');
-}
-/**
- * FizzBuzz - both multiples of 3
- * @void: takes no parameter
- * Return: Always 0
- */
-void FizzBuzz(void)
-{
-	_putchar('F');
-	_putchar('i');
-	_putchar('z');
-	_putchar('z');
-	_putchar('B');
-	_putchar('u');
-	_putchar('z');
-	_putchar('z');
-	_putchar(' ');
-}
-
