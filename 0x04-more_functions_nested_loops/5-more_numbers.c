@@ -5,6 +5,7 @@
  * @void: takes no argument or paramter
  * Return: Always 0
  */
+void new_line(void);
 void more_numbers(void)
 {
 	int i;
@@ -25,6 +26,15 @@ void more_numbers(void)
 			}
 
 		}
-		_putchar('\n');
+		new_line();
 	}
+}
+/**
+ * new_line - new line
+ * @void: no input
+ * Return: Always 0
+ */
+void new_line(void)
+{
+	_putchar('\n');
 }
