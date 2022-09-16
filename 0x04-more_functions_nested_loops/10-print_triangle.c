@@ -10,7 +10,7 @@ void print_triangle(int size)
 	int row;
 	int space;
 	int star;
-	
+
 	if (size > 0)
 	{
 	for (row = 1; row <= size; row++)
@@ -31,7 +31,7 @@ void print_triangle(int size)
 	{
 		_putchar('\n');
 	}
-	
+
 
 }
 
