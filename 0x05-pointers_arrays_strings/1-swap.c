@@ -6,7 +6,8 @@
  * Return: Always 0
  */
 void swap_int(int *a, int *b)
-{
-	*a = 42;
-	*b = 98;
+{	
+	
+	*a = *a + *b - *a;
+	*b = *a + *b - *b;
 }
