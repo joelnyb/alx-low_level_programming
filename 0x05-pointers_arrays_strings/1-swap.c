@@ -6,7 +6,7 @@
  * Return: Always 0
  */
 void swap_int(int *a, int *b)
-{	
+{
 	int sum = *a + *b;
 	*a = *a + *b - *a;
 	*b = sum - *b;
