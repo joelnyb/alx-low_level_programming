@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _strchr - Locates the string
  * @s: the string to take the copy
@@ -8,24 +7,22 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	int counter;
+	int size;
+	int i;
 
-	while (s[i] != '\0')
+	while (s[size])
 	{
-		if (s[i] == c)
+		size++;
+	}
+	for (i = 0; i <= size; i++)
+	{
+		if (c == s[i])
 		{
-			counter = i;
-			break;
+			s += i;
+			return (s);
 		}
-		i++;
 	}
-	while (s[counter] != '\0')
-	{
-		s += counter;
-		counter++;
-		return (s);
-	}
-	return (0);
+
+	return ('\0');
 
 }
