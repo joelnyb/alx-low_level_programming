@@ -20,10 +20,11 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	for (; s[counter] != '\0'; counter++)
+	for (;s[counter] != '\0'; counter++)
 	{
 		s += counter;
-		return (s);
+		return (char *) s;
 	}
-	return ('\0');
+	return NULL;
+
 }
