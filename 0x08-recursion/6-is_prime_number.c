@@ -12,7 +12,7 @@ int is_prime_number(int n)
 		return (0);
 	else
 		return (prime(2, n));
-	
+
 }
 /**
  * prime - allows to determine whether a number is prime
@@ -33,7 +33,7 @@ int  prime(int x, int n)
 		else if (x == n)
 			return (1);
 	}
-	
+
 		return (prime(x + 1, n));
-	
+
 }
