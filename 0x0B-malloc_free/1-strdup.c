@@ -10,7 +10,7 @@ char *_strdup(char *str)
 	int i = 0;
 	int count = 0;
 	char *arr;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -20,9 +20,9 @@ char *_strdup(char *str)
 		count++;
 		i++;
 	}
-	 arr = (char *)malloc(count * sizeof(char));
-	 if (arr == NULL)
-		 return (NULL);
+	arr = (char *)malloc((count + 1) * sizeof(char));
+	if (arr == NULL)
+		return (NULL);
 
 	for (i = 0; i < count; i++)
 	{
