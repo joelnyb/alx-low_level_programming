@@ -10,7 +10,11 @@ char *_strdup(char *str)
 	int i = 0;
 	int count = 0;
 	char *arr;
-
+	
+	if (str = NULL || arr == NULL)
+	{
+		return (NULL);
+	}
 	while (str[i] != '\0')
 	{
 		count++;
