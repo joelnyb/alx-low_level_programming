@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	int count = 0;
 	char *arr;
 	
-	if (str = NULL || arr == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -21,6 +21,8 @@ char *_strdup(char *str)
 		i++;
 	}
 	 arr = (char *)malloc(count * sizeof(char));
+	 if (arr == NULL)
+		 return (NULL);
 
 	for (i = 0; i < count; i++)
 	{
