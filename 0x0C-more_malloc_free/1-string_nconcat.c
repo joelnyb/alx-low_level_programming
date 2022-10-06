@@ -12,12 +12,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, j = 0, size_s1 = 0, size_s2 = 0, k;
 	char *arr;
 
-	while (s1[i] != '\0')
+	while (s1[i])
 	{
 		size_s1++;
 		i++;
 	}
-	while (s2[j] != '\0')
+	while (s2[j])
 	{
 		size_s2++;
 		j++;
