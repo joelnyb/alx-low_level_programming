@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc - creates an array 
+ * _calloc - creates an array
  * @nmemb: takes member
  * @size: takes size
  * Return: always the address
