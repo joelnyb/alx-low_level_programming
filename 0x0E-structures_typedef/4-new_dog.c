@@ -11,7 +11,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	int len_name = 0, len_owner = 0, i;
 
-	struct dog * new_dog = NULL;
+	 dog_t *new_dog = NULL;
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 	while (name[len_name] != '\0')
