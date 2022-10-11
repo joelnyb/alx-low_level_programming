@@ -12,8 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int len_name = 0, len_owner = 0, i;
 
 	 dog_t *new_dog;
-	if (name == NULL || age < 0 || owner == NULL)
-		return (NULL);
+
 	while (name[len_name] != '\0')
 	{
 		len_name++;
