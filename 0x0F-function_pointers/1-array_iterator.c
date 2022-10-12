@@ -4,7 +4,7 @@
  * array_iterator - a function to iterate on an array elements
  * @array: array address passed
  * @size: size of the array
- * @action: function pointer 
+ * @action: function pointer
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
