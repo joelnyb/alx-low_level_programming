@@ -10,8 +10,10 @@ size_t print_list(const list_t *h)
 	int count = 0;
 	const struct list_s *ptr;
 
+	if (h == NULL)
+		printf("[0] (nil)");
 
-	ptr = h;
+ptr = h;
 
 	while (ptr != NULL)
 	{
