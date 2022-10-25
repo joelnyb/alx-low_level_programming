@@ -16,7 +16,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	struct listint_s *ptr = (*head);
 
 	if (tmp == NULL)
-		return (NULL)
+		return (NULL);
+
 	tmp->n = n;
 
 	if (idx == 0)
