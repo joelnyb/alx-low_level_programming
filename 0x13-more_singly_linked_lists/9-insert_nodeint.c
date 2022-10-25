@@ -16,17 +16,23 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	struct listint_s *ptr = (*head);
 
 	pos = idx - 1;
-	
-	if (tmp == NULL)
-		return (NULL);
+
+	if (idx == 0)
+	{
+		tmp->next = ptr;
+		*head = tmp;
+		return (tmp);
+	}
 
 
 	while (pos != 0)
 	{
+		if (ptr == NULL || ptr->next == NULL)
+			return (NULL);
 		ptr = ptr->next;
 		pos--;
 	}
-	
+
 	tmp->next = ptr->next;
 	tmp->n = n;
 	ptr->next = tmp;
