@@ -9,13 +9,15 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	int pos;
+	unsigned int i;
 
 	struct listint_s *tmp = malloc(sizeof(struct listint_s));
 
 	struct listint_s *ptr = (*head);
 
-	pos = idx - 1;
+	if (tmp == NULL)
+		return (NULL)
+	tmp->n = n;
 
 	if (idx == 0)
 	{
@@ -25,16 +27,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 
 
-	while (pos != 0)
+	for (i = 0; i < (idx - 1); i++)
 	{
 		if (ptr == NULL || ptr->next == NULL)
 			return (NULL);
 		ptr = ptr->next;
-		pos--;
+
 	}
 
 	tmp->next = ptr->next;
-	tmp->n = n;
 	ptr->next = tmp;
 
 	return (tmp);
