@@ -4,7 +4,8 @@
  * free_listint - free an entire list
  * @head: pointer to first node
  * Return: void
- */void free_listint(listint_t *head)
+ */
+void free_listint(listint_t *head)
 {
 	struct listint_s *ptr = head;
 
