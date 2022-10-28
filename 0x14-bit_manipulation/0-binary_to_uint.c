@@ -19,7 +19,7 @@ int _power(int n, int j)
 
 
 /**
- * int binary_to_uint - converts binary to Decimal
+ * binary_to_uint - converts binary to Decimal
  * @b: string address passed to the function
  * Return: integer sum
  */
