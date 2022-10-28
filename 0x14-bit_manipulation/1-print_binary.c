@@ -6,25 +6,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	int tmp = n;
+	unsigned int tmp = n;
 	int count = 0;
 	int decoy;
-	int i, size ;
-	int sign = n;
-
-	if (tmp < 1)
-	{
-		tmp = tmp * -1;
-	}
+	int i, size;
 	while (tmp > 0)
 	{
 		count++;
 		tmp = tmp >> 1;
 	}
-	if (sign < 0)
-		size = count;
-	else
-		size = count - 1;
+	size = count - 1;
 
 	if (n != 0)
 	{
