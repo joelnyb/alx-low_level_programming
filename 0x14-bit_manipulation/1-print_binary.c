@@ -6,11 +6,15 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int tmp = n;
+	int tmp = n;
 	int count = 0;
 	int decoy;
 	int i;
-
+	
+	if (tmp < 1)
+	{
+		tmp = tmp * -1;
+	}
 	while (tmp > 0)
 	{
 		count++;
@@ -28,6 +32,8 @@ void print_binary(unsigned long int n)
 				_putchar('0');
 		}
 	}
-	else
+	else if (n == 0)
+	{
 		_putchar('0');
+	}
 }
