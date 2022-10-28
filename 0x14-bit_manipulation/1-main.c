@@ -37,6 +37,10 @@ int main(void)
     print_binary((1 << 10) + 1);
 
     printf("\n");
+    print_binary(-25);
+    printf("\n");
+    print_binary(-12);
+    printf("\n");
 
     return (0);
 

@@ -9,8 +9,9 @@ void print_binary(unsigned long int n)
 	int tmp = n;
 	int count = 0;
 	int decoy;
-	int i;
-	
+	int i, size ;
+	int sign = n;
+
 	if (tmp < 1)
 	{
 		tmp = tmp * -1;
@@ -20,10 +21,14 @@ void print_binary(unsigned long int n)
 		count++;
 		tmp = tmp >> 1;
 	}
+	if (sign < 0)
+		size = count;
+	else
+		size = count - 1;
 
-	if (n > 0)
+	if (n != 0)
 	{
-		for (i = (count - 1); i >= 0; i--)
+		for (i = size; i >= 0; i--)
 		{
 			decoy = n >> i;
 			if (decoy & 1)
